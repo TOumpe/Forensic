@@ -1,0 +1,266 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french,english]{babel}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+\geometry{a4paper, margin=1.8cm}
+
+\fancyhead[L]{Investigation Numérique}
+\fancyhead[R]{\textit{TOumpé ERIC}}
+\renewcommand{\headrulewidth}{0.5pt}
+
+\geometry{left=18mm,right=18mm,top=18mm,bottom=18mm}
+
+\begin{document}
+	\thispagestyle{empty}
+	
+	
+	\begin{tikzpicture}[remember picture,overlay]
+		\draw[black,line width=6pt]
+		($(current page.north west)+(1.2cm,-1.2cm)$) rectangle
+		($(current page.south east)+(-1.2cm,1.2cm)$);
+		\draw[black,line width=0.5pt]
+		($(current page.north west)+(1.4cm,-1.4cm)$) rectangle
+		($(current page.south east)+(-1.4cm,1.4cm)$);
+	\end{tikzpicture}
+	
+	
+	\vspace*{-1cm} 
+	\begin{center}
+		\begin{tabular}{m{0.40\textwidth} m{0.15\textwidth} m{0.40\textwidth}}
+		
+			\centering\small
+			RÉPUBLIQUE DU CAMEROUN\\
+			\textit{Paix -- Travail -- Patrie}\\
+			******\\
+			MINISTÈRE DE L'ENSEIGNEMENT SUPÉRIEUR\\
+			******\\
+			\textbf{UNIVERSITÉ DE YAOUNDÉ I}\\
+			******\\
+			\textbf{ÉCOLE NATIONALE SUPÉRIEURE POLYTECHNIQUE}\\
+			******\\
+			DÉPARTEMENT DE GÉNIE INFORMATIQUE\\
+            ******\\
+			&
+		
+			\centering
+			\raisebox{0.5cm}{\includegraphics[height=3cm]{ENSPY.jpg}} 
+			&
+			
+			\centering\small
+			\hspace{0.2cm} 
+			REPUBLIC OF CAMEROON\\
+			\textit{Peace -- Work -- Fatherland}\\
+			******\\
+			MINISTRY OF HIGHER \\
+            EDUCATION\\
+			******\\
+			\textbf{UNIVERSITY OF YAOUNDE I}\\
+			******\\
+			\textbf{NATIONAL ADVANCED SCHOOL OF ENGINEERING}\\
+			******\\
+			COMPUTER ENGINEERING DEPARTMENT\\
+            ******\\
+		\end{tabular}
+	\end{center}
+	
+
+	\vspace{0.5cm}
+	\begin{center}
+		\fcolorbox{black}{white}{%
+			\parbox{0.85\textwidth}{%
+				\vspace{0.4cm}
+				\centering
+				\bfseries\fontsize{21pt}{23pt}\selectfont
+				INTRODUCTION AUX TECHNIQUES\\
+				D'INVESTIGATION NUMÉRIQUE
+				\vspace{0.4cm}
+		}}
+	\end{center}
+	
+
+	\vspace{0.8cm}
+	\begin{center}
+		\fcolorbox{black}{black!40!black}{%
+			\parbox{0.6\textwidth}{%
+				\vspace{0.5cm}
+				\centering
+				\color{white}\bfseries\fontsize{22pt}{28pt}\selectfont
+				RESUME DE COURS
+				\vspace{0.5cm}
+		}}
+	\end{center}
+	
+	
+	\vspace{1.5cm}
+	\begin{center}
+			\fontsize{15pt}{20pt}\selectfont
+            \textit{Rédigé par}\\
+            \textbf{NZOUCK TOUMPE ERIC - OLIVIER}\\
+            \textit{Matricule : \textbf{22P060}}
+	\end{center}
+	
+	\vspace{1.5cm}
+	\begin{center}
+			\fontsize{15pt}{20pt}\selectfont
+            \textit{Sous la supervision de}\\
+            \textbf{Thierry MINKA, Eng}\\
+	\end{center}
+	
+
+	\vspace{1cm}
+	\begin{center}
+		\fcolorbox{black}{black!10!black}{%
+			\parbox{0.4\textwidth}{%
+				\vspace{0.3cm}
+				\centering
+				\color{white}\bfseries\fontsize{10pt}{10pt}\selectfont
+				Année académique 2025/2026
+				\vspace{0.2cm}
+		}}
+	\end{center}
+	
+	\vfill
+	\pagestyle{fancy}
+    \newpage
+    \pagestyle{fancy}
+	
+	{\Large
+		
+		{\Large
+
+}
+L’investigation numérique ne saurait être réduite à un catalogue de techniques ou à une panoplie d’outils. 
+Elle se définit d’abord comme une \textbf{philosophie appliquée du numérique}, c’est-à-dire une réflexion globale 
+sur la manière dont la vérité peut être établie dans un monde où la donnée joue un double rôle : instrument de transparence et vecteur d’opacité.
+
+À travers cette approche, la discipline dépasse largement la dimension strictement opérationnelle 
+pour embrasser une interrogation épistémologique et ontologique. 
+Elle pose une question essentielle : 
+
+\textit{Comment dire la vérité à partir des traces numériques, alors même que celles-ci peuvent être manipulées, altérées ou dissimulées ?}
+
+\textbf{Les dimensions de la réflexion}
+Cette réflexion se décline en plusieurs dimensions complémentaires :  
+
+\begin{itemize}
+    \item \textbf{Épistémologique :} l’être humain ne se réduit plus à sa matérialité physique. 
+    Il projette une partie de son identité dans le cyberespace, par le biais de ses interactions, communications et empreintes digitales.  
+
+    \item \textbf{Ontologique :} le « double numérique » constitue une véritable extension de l’être. 
+    Ces représentations, bien que virtuelles, possèdent une valeur existentielle équivalente à sa présence matérielle.  
+
+    \item \textbf{Phénoménologique :} les données numériques apparaissent comme des manifestations d’existence, comparables à des objets matériels ou à des témoignages humains.  
+
+    \item \textbf{Métaphysique :} le numérique ouvre de nouveaux modes d’existence, de relation et de temporalité. 
+    Les traces prolongent la mémoire, défient l’oubli et recomposent la condition humaine.  
+\end{itemize}
+
+\noindent
+De cette philosophie découle un paradoxe central : 
+\textbf{plus une donnée est rendue transparente et vérifiable, plus elle menace l’intimité individuelle}.  
+L’investigateur doit naviguer entre deux impératifs : l’exigence de vérité et la protection des droits fondamentaux.
+
+\noindent
+L’investigation numérique s’appuie sur des piliers théoriques solides empruntés aux sciences fondamentales :  
+
+\begin{itemize}
+    \item \textbf{Théorie de l’information (Claude Shannon)} : quantification de l’incertitude, détection des anomalies via l’entropie, mesure de la redondance et de l’imprévisibilité.  
+
+    \item \textbf{Théorie des graphes} : cartographie des relations sociales, techniques et financières. 
+    Elle met en évidence les nœuds et flux cachés, essentiels pour démanteler des réseaux criminels.  
+
+    \item \textbf{Théorie du chaos} : dans des systèmes complexes, une variation minime peut engendrer des effets considérables. 
+    Cela impose une extrême rigueur méthodologique.  
+\end{itemize}
+
+La révolution quantique a introduit une rupture épistémologique majeure. 
+Les concepts de superposition, d’intrication ou de non-localité bouleversent les critères classiques d’authenticité.  
+
+\bigskip
+D’où l’émergence du paradoxe de l’\textbf{authenticité invisible} : vérifier une preuve, c’est risquer d’altérer sa confidentialité.  
+
+\medskip
+Les \textbf{Zero-Knowledge Proofs} (preuves à divulgation nulle de connaissance) offrent une réponse élégante : démontrer la validité d’une information sans révéler l’information elle-même.  
+
+Ainsi, l’investigation numérique apparaît comme une \textbf{épistémologie appliquée doublée d’une archéologie digitale}, où l’investigateur devient un médiateur entre traces dispersées et reconstruction de la vérité.
+
+L’éthique constitue la colonne vertébrale de la discipline. 
+L’investigateur est non seulement un technicien, mais aussi un \textbf{gardien de la confiance sociale}. {Les principes ACPO sont : }
+\begin{enumerate}
+    \item Ne jamais modifier les données originales.  
+    \item Si une intervention est nécessaire, elle doit être réalisée par un expert qualifié.  
+    \item Documenter intégralement chaque action, afin d’assurer la traçabilité.  
+    \item Garantir, par la supervision, que le processus respecte ces principes.  
+\end{enumerate}
+
+À l’échelle mondiale, plusieurs standards encadrent la pratique :  
+
+\begin{itemize}
+    \item \textbf{ISO/IEC 27037} : protocole rigoureux de saisie (identification, documentation photographique, isolation, write-blocker, hachage SHA-256, scellement et transport).  
+
+    \item \textbf{RFC 3227} : ordre de volatilité, priorité aux données éphémères (registres, mémoire vive) avant les persistantes.  
+
+    \item \textbf{NIST SP 800-86} : étapes de la réponse aux incidents et intégration dans la gestion de crise.  
+\end{itemize}
+
+\noindent
+Ce cadre normatif vise à garantir la \textbf{confidentialité, la fiabilité et l’opposabilité juridique} des preuves.  
+Ces trois axes sont synthétisés dans le \textbf{Trilemme CRO}, véritable boussole théorique de la discipline.
+
+L’investigation numérique s’appuie sur des méthodologies internationales éprouvées :  
+
+\begin{itemize}
+    \item \textbf{SANS FOR508} : approche en six phases (préparation, identification, confinement, éradication, récupération, leçons tirées).  
+    \item \textbf{Processus CERT/CC} : gestion structurée des incidents et coordination.  
+    \item \textbf{ENISA Forensic Framework} : méthodologie européenne axée sur la coopération transfrontalière.  
+    \item \textbf{Modèle de Casey} : approche pédagogique en phases successives.  
+    \item \textbf{Analyse formelle} : outils comme Tamarin Prover pour valider la robustesse des protocoles.  
+\end{itemize}
+
+\begin{itemize}
+    \item \textbf{Supports numériques} : FTK, EnCase, Cellebrite, Magnet AXIOM.  
+    \item \textbf{Analyse réseau} : Wireshark, Zeek.  
+    \item \textbf{Mémoire vive} : Volatility 3.  
+    \item \textbf{Logs et SIEM} : Splunk, ELK.  
+    \item \textbf{IA et machine learning} : détection comportementale et attribution technique.  
+\end{itemize}
+
+La discipline impose aussi une standardisation : SOP, checklists, modèles de rapports, scripts d’automatisation. Trois défis majeurs se présentent aujourd’hui :  
+
+\begin{enumerate}
+    \item \textbf{Équilibre investigation / droits fondamentaux} : le RGPD impose des contraintes fortes (minimisation, droit à l’oubli).  
+    \item \textbf{Menace quantique} : Shor compromettra RSA/ECC, Grover réduira la robustesse des clés symétriques. 
+    Transition vers la cryptographie post-quantique (CRYSTALS-Kyber, Dilithium).  
+    \item \textbf{Internationalisation} : les attaques transfrontalières exigent une coopération accrue (Convention de Budapest, Convention de Malabo).  
+\end{enumerate}
+
+Ces défis soulignent l’importance d’une éthique robuste : l’investigateur doit être garant de la vérité et protecteur des libertés.
+
+L’investigation numérique et la cybersécurité sont indissociables :  
+
+\begin{itemize}
+    \item \textbf{L’une} incarne la réflexion philosophique et éthique.  
+    \item \textbf{L’autre} apporte les outils et standards opérationnels.  
+\end{itemize}
+
+De nouveaux horizons émergent :  
+\begin{itemize}
+    \item Forensique d’IA (attaques générées par deep learning).  
+    \item Forensique prédictive (anticipation des comportements).  
+    \item Forensique quantique (adaptée aux environnements futurs).  
+\end{itemize}
+
+\bigskip
+Somme toute, l’investigation numérique est un \textbf{pilier du pacte social numérique}, garantissant justice, vérité et confiance, conditions indispensables à la vie collective.
+
+}
+
+\end{document}
